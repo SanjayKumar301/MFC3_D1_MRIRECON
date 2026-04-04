@@ -7,18 +7,18 @@
 
 ---
 
-## 👥 Team Members
+##  Team Members
 
 | Name | Roll Number |
 |---|---|
 | Arjun | CB.SC.U4AIE24305 |
-| Dhakshin S | CB.SC.U4AIE24313 |
+| Dhakshin N | CB.SC.U4AIE24313 |
 | Sanjay Kumar S | CB.SC.U4AIE24354 |
 | Kneev S Jain | CB.SC.U4AIE24364 |
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Magnetic Resonance Imaging (MRI) is one of the most powerful non-invasive medical imaging techniques for visualizing internal structures of the human body — especially soft tissues. However, a major limitation of MRI is its **slow data acquisition process**, requiring a large amount of frequency-domain data (k-space) to be collected. Long acquisition times lead to patient discomfort and motion artifacts that reduce image quality.
 
@@ -28,7 +28,7 @@ This project addresses that limitation by implementing a **compressed sensing (C
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 - Full k-space sampling is required for high-quality MRI, but it results in long acquisition times.
 - Undersampling k-space speeds up the scan but introduces noise, artifacts, and loss of structural detail.
@@ -36,7 +36,7 @@ This project addresses that limitation by implementing a **compressed sensing (C
 
 ---
 
-## 🗂️ Repository Structure
+##  Repository Structure
 
 ```
 MFC3_AIE24_D1_MRIRECON/
@@ -59,7 +59,7 @@ MFC3_AIE24_D1_MRIRECON/
 
 ---
 
-## 🧪 Dataset
+##  Dataset
 
 | Property | Details |
 |---|---|
@@ -72,7 +72,7 @@ The **Shepp–Logan Phantom** simulates a cross-sectional view of the human brai
 
 ---
 
-## ⚙️ Methodology
+##  Methodology
 
 ### 1. Compressed Sensing (CS)
 Instead of collecting the full k-space data, CS exploits the **sparsity** of MRI images in a transform domain (e.g., Total Variation). By using a random undersampling mask, we collect far fewer measurements while still being able to reconstruct the full image.
@@ -90,7 +90,7 @@ TV regularization penalizes the gradient of the image, promoting **piecewise smo
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Prerequisites
 - MATLAB R2022b or later
@@ -125,13 +125,13 @@ The output visualizes three images side by side:
 
 ---
 
-## 📊 Results
+##  Results
 
 The ADMM reconstruction significantly outperforms the zero-filled baseline, recovering structural detail lost due to undersampling. The convergence plot confirms stable and rapid convergence of the algorithm across iterations.
 
 ---
 
-## 📄 References
+##  References
 
 | Paper | Description |
 |---|---|
@@ -143,7 +143,7 @@ The ADMM reconstruction significantly outperforms the zero-filled baseline, reco
 
 ---
 
-## 📝 Additional Report
+##  Additional Report
 
 The **Analog Computing Report** documents a supplementary project on solving a **Damped Harmonic Oscillator** ODE using an analog computer circuit built with LM741 operational amplifiers. The circuit was powered and visualized using the **ADALM2000 (M2K)** and Scopy software. This demonstrates the mathematical connection between differential equations, signal processing, and physical circuit design.
 
